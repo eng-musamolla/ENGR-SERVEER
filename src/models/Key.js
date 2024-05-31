@@ -8,9 +8,9 @@ const studentSchema = new mongoose.Schema({
 }, { timestamps: true }, { versionKey: false });
 
 
-const adKey = mongoose.model('Keys', studentSchema);
+const Key = mongoose.model('Keys', studentSchema);
 
-module.exports = adKey;
+module.exports = Key;
 
 
 

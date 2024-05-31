@@ -1,0 +1,2 @@
+ECHO is off.
+{\"userName\":\"Musa Molla\", \"OS\":\"Microsoft Windows 11 Pro\",\"P\":\"B9887-RNTT9-2JYRQ-MCPP8-W44C2\"} 

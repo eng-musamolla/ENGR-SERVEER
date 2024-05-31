@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 
-const key = require('../controllers/adKey');
+const key = require('../controllers/Key');
 const employee = require('../controllers/employee');
 const sms = require('../controllers/sms');
 const authLogin = require('../controllers/auth/middlewares/authLogin');
@@ -18,7 +18,9 @@ const ImageFile = upload.single('ImageFile');
 
 
 // Auth Routes
-routes.post('/adkey', key.adKey);
+routes.post('/key', key.adKey);
+routes.get('/keys', key.getAllKeys);
+routes.delete('/key', key.deleteKey);
 
 
 // Employee Routes
